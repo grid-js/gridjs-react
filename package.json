@@ -1,0 +1,63 @@
+{
+  "name": "gridjs-react",
+  "version": "0.1.0",
+  "description": "React component for Grid.js",
+  "main": "dist/gridjs.production.min.js",
+  "module": "dist/gridjs.production.es.min.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "gridjs",
+    "table",
+    "react",
+    "sort",
+    "pagination",
+    "grid"
+  ],
+  "author": "Afshin Mehrabani <afshin.meh@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "gridjs": "file:../gridjs",
+    "react": "^16.13.1"
+  },
+  "scripts": {
+    "clean": "rimraf coverage dist tmp",
+    "build": "rollup -c",
+    "build:watch": "rollup -c --watch",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^26.0.0",
+    "@types/react": "^16.9.36",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "~23.13.2",
+    "gridjs": "file:../gridjs",
+    "jest": "~25.5.4",
+    "jsdom": "^16.2.2",
+    "jsdom-global": "^3.0.2",
+    "prettier": "~2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "~3.0.2",
+    "rollup": "^2.11.2",
+    "rollup-plugin-sizes": "^1.0.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^25.5.1",
+    "ts-loader": "^7.0.5",
+    "tslib": "^2.0.0",
+    "tsutils": "~3.17.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {}
+}
