@@ -1,6 +1,6 @@
 # Grid.js for React
 
-[Grid.js](https://gridjs.io/) component for React
+React component for [Grid.js](https://gridjs.io/)
 
 ## Install
 
