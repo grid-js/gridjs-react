@@ -18,7 +18,7 @@ npm install --save gridjs
 
 ```jsx
 <Grid
-  data={data: [
+  data={[
     ['John', 'john@example.com'],
     ['Mike', 'mike@gmail.com']
   ]}
