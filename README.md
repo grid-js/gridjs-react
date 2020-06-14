@@ -16,6 +16,14 @@ npm install --save gridjs
 
 ## Usage
 
+Import the Grid component first:
+
+```js
+import { Grid } from "gridjs-react";
+```
+
+and then:
+
 ```jsx
 <Grid
   data={[
@@ -32,6 +40,10 @@ npm install --save gridjs
 ```
 
 Then you can pass all Grid.js configs to the `Grid` component. See [Grid.js Config](https://gridjs.io/docs/config) for more details.
+
+## Example
+
+See the [React example](https://gridjs.io/docs/integrations/react) on Grid.js website.
 
 ## License
 

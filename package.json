@@ -1,6 +1,6 @@
 {
   "name": "gridjs-react",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "React component for Grid.js",
   "main": "dist/gridjs.production.min.js",
   "module": "dist/gridjs.production.es.min.js",
@@ -19,8 +19,8 @@
   "author": "Afshin Mehrabani <afshin.meh@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "gridjs": "file:../gridjs",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "gridjs": "^1.5.0"
   },
   "scripts": {
     "clean": "rimraf coverage dist tmp",
@@ -40,7 +40,7 @@
     "eslint": "~6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest": "~23.13.2",
-    "gridjs": "file:../gridjs",
+    "gridjs": "^1.5.0",
     "jest": "~25.5.4",
     "jsdom": "^16.2.2",
     "jsdom-global": "^3.0.2",

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { mount } from "enzyme";
-import Grid from "../src/grid";
+import { Grid } from "../index";
 
 const flushPromises = () => new Promise(setImmediate);
 
