@@ -1,6 +1,6 @@
 {
   "name": "gridjs-react",
-  "version": "1.5.0",
+  "version": "1.6.3",
   "description": "React component for Grid.js",
   "main": "dist/gridjs.production.min.js",
   "module": "dist/gridjs.production.es.min.js",
@@ -17,10 +17,12 @@
     "grid"
   ],
   "author": "Afshin Mehrabani <afshin.meh@gmail.com>",
+  "homepage": "https://gridjs.io",
+  "repository": "https://github.com/grid-js/gridjs-react",
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.13.1",
-    "gridjs": "^1.5.0"
+    "gridjs": "^1.6.3"
   },
   "scripts": {
     "clean": "rimraf coverage dist tmp",
