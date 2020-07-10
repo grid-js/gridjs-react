@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Component, createRef, RefObject } from "react";
-import {Grid as Gridjs, UserConfig} from "gridjs";
+import { Grid as Gridjs, UserConfig } from "gridjs";
 
-class Grid extends Component<UserConfig, {}> {
+class Grid extends Component<Partial<UserConfig>, {}> {
   private wrapper: RefObject<HTMLDivElement> = createRef();
   // Grid.js instance
   private readonly instance = null;
