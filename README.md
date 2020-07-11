@@ -22,8 +22,6 @@ Import the Grid component first:
 import { Grid } from "gridjs-react";
 ```
 
-and then:
-
 ```jsx
 <Grid
   data={[
@@ -40,6 +38,42 @@ and then:
 ```
 
 Then you can pass all Grid.js configs to the `Grid` component. See [Grid.js Config](https://gridjs.io/docs/config) for more details.
+
+## React component in cells
+
+You can bind your React components or elements in Table cells (both in header and body cells). 
+Simply import the `_` function and use it in `data`, `columns` or `formatter` function:
+
+```js
+import { Grid, _ } from "gridjs-react";
+```
+
+```jsx
+<Grid
+  data={[
+    [
+      _(<b>John</b>),
+      'john@example.com',
+    ],
+    [
+      _(<MyReactComponent>Mike</MyReactComponent>),
+      'mike@gmail.com',
+    ]
+  ]}
+  columns={[
+    'Name', 
+    {
+      name: 'Email',
+      formatter: (cell) => _(<i>{cell}</i>)
+    }
+  ]}
+  search={true}
+  pagination={{
+    enabled: true,
+    limit: 1,
+  }}
+/>
+```
 
 ## Example
 
