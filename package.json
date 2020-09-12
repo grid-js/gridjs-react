@@ -41,7 +41,7 @@
     "enzyme-adapter-react-16": "^1.15.3",
     "eslint": "~7.6.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-jest": "^23.18.2",
+    "eslint-plugin-jest": "^24.0.1",
     "gridjs": "^1.16.0",
     "jest": "~25.5.4",
     "jsdom": "^16.4.0",
