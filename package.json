@@ -22,7 +22,7 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.13.1",
-    "gridjs": "^1.14.0"
+    "gridjs": "^3.0.2"
   },
   "scripts": {
     "clean": "rimraf coverage dist tmp",
@@ -42,7 +42,7 @@
     "eslint": "~7.6.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-jest": "^23.18.2",
-    "gridjs": "^1.17.0",
+    "gridjs": "^3.0.2",
     "jest": "~25.5.4",
     "jsdom": "^16.4.0",
     "jsdom-global": "^3.0.2",
