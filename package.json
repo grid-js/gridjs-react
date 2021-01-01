@@ -1,6 +1,6 @@
 {
   "name": "gridjs-react",
-  "version": "3.0.2",
+  "version": "3.2.1",
   "description": "React component for Grid.js",
   "main": "dist/gridjs.production.min.js",
   "module": "dist/gridjs.production.es.min.js",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.13.1",
-    "gridjs": "^3.0.2"
+    "gridjs": "^3.2.1"
   },
   "scripts": {
     "clean": "rimraf coverage dist tmp",
@@ -44,7 +44,7 @@
     "eslint": "~7.13.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-jest": "^24.1.3",
-    "gridjs": "^3.0.2",
+    "gridjs": "^3.2.1",
     "jest": "~25.5.4",
     "jsdom": "^16.4.0",
     "jsdom-global": "^3.0.2",
