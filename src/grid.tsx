@@ -18,11 +18,11 @@ class Grid extends Component<Partial<UserConfig>, any> {
   }
 
   componentDidMount() {
-    this.instance.render(this.wrapper.current);
+    if (this.wrapper.current) this.instance.render(this.wrapper.current);
   }
 
   componentDidUpdate() {
-    this.instance.updateConfig(this.props).forceRender();
+    if (this.wrapper.current) this.instance.updateConfig(this.props).forceRender();
   }
 
   render() {
