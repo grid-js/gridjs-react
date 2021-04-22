@@ -21,8 +21,8 @@
   "repository": "https://github.com/grid-js/gridjs-react",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.13.1",
-    "gridjs": "^3.2.2"
+    "gridjs": "^3.2.2",
+    "react": ">=16.13.1 <18.x"
   },
   "scripts": {
     "clean": "rimraf coverage dist tmp",
@@ -62,6 +62,5 @@
     "tslib": "^2.0.3",
     "tsutils": "~3.19.1",
     "typescript": "^3.9.7"
-  },
-  "dependencies": {}
+  }
 }
