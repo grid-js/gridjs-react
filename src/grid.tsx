@@ -22,7 +22,6 @@ class Grid extends Component<Partial<UserConfig>, any> {
   }
 
   componentDidUpdate() {
-    console.log('XXXX')
     this.instance.updateConfig(this.props).forceRender();
   }
 
