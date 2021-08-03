@@ -1,6 +1,6 @@
 {
   "name": "gridjs-react",
-  "version": "4.0.0",
+  "version": "5.0.2",
   "description": "React component for Grid.js",
   "main": "dist/gridjs.production.min.js",
   "module": "dist/gridjs.production.es.min.js",
