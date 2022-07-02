@@ -19,12 +19,12 @@ export default [
         tsconfig: "tsconfig.json",
         tsconfigOverride: {
           compilerOptions : {
-            module: "es2015"
+            module: "es6"
           }
         }
       })
     ],
-    external: ['react', 'react-dom', 'gridjs']
+    external: ['react', 'react-dom/client', 'gridjs']
   },
   {
     input: 'index.ts',
@@ -38,7 +38,7 @@ export default [
         tsconfig: "tsconfig.release.json",
         tsconfigOverride: {
           compilerOptions: {
-            module: "es2015",
+            module: "es6",
             declaration: false
           }
         }
@@ -48,6 +48,6 @@ export default [
         writeFile: false,
       }),
     ],
-    external: ['react', 'react-dom', 'gridjs']
+    external: ['react', 'react-dom/client', 'gridjs']
   },
 ]
