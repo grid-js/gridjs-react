@@ -1,5 +1,5 @@
 import { h, createRef as gCreateRef, Component as gComponent } from "gridjs";
-import * as ReactDOMClient from 'react-dom/client';
+import * as ReactDOMClient from "react-dom/client";
 
 export class ReactWrapper extends gComponent<{
   element: any;
