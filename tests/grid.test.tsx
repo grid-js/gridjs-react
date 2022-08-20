@@ -93,7 +93,7 @@ describe("Grid component", () => {
               element: <b>8</b>,
             }),
             h(ReactWrapper, {
-              element: <b>8</b>,
+              element: <b>9</b>,
               parent: "span",
             }),
           ],
@@ -102,7 +102,7 @@ describe("Grid component", () => {
       />
     );
 
-    await waitFor(() => table.findByText('1'));
+    await waitFor(() => table.findByText('8'));
 
     expect(table.container.innerHTML).toMatchSnapshot();
   });
@@ -119,7 +119,7 @@ describe("Grid component", () => {
       />
     );
 
-    await waitFor(() => table.findByText('1'));
+    await waitFor(() => table.findByText('9'));
 
     expect(table.container.innerHTML).toMatchSnapshot();
   });

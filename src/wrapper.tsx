@@ -1,6 +1,6 @@
 import { h, createRef as gCreateRef, Component as gComponent } from "gridjs";
+import { createRoot } from 'react-dom/client';
 
-import ReactDOM from "react-dom";
 
 export class ReactWrapper extends gComponent<{
   element: any;
@@ -12,8 +12,9 @@ export class ReactWrapper extends gComponent<{
 
   ref = gCreateRef();
 
-  componentDidMount() {
-    ReactDOM.render(this.props.element, this.ref.current);
+  componentDidMount(): void {
+    const root = createRoot(this.ref.current);
+    root.render(this.props.element);
   }
 
   render() {
