@@ -17,15 +17,15 @@ class Grid extends Component<Partial<UserConfig>, any> {
     return this.instance;
   }
 
-  componentDidMount() {
+  componentDidMount(): void {
     this.instance.render(this.wrapper.current);
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(): void {
     this.instance.updateConfig(this.props).forceRender();
   }
 
-  render() {
+  render(): React.ReactElement {
     return <div ref={this.wrapper} />;
   }
 }
