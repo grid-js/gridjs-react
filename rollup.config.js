@@ -1,4 +1,5 @@
 import typescript from 'rollup-plugin-typescript2';
+import commonjs from "@rollup/plugin-commonjs";
 import { terser } from 'rollup-plugin-terser'
 import size from 'rollup-plugin-sizes'
 import resolve from '@rollup/plugin-node-resolve';
@@ -14,6 +15,7 @@ export default [
       { file: path('development', 'es'), format: 'es', sourcemap: true },
     ],
     plugins: [
+      commonjs(),
       resolve(),
       typescript({
         tsconfig: "tsconfig.json",
@@ -33,6 +35,7 @@ export default [
       { file: path('production', 'es.min'), format: 'es', sourcemap: true },
     ],
     plugins: [
+      commonjs(),
       resolve(),
       typescript({
         tsconfig: "tsconfig.release.json",
