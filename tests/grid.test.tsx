@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render, waitFor } from '@testing-library/react'
+import {render, waitFor} from '@testing-library/react'
 import { Grid } from "../index";
 import { _, ReactWrapper } from "../src/wrapper";
 import { h } from "gridjs";
