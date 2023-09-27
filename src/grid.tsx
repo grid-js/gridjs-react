@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Component, createRef, RefObject } from "react";
-import { Grid as Gridjs, UserConfig } from "gridjs";
+import { Grid as Gridjs, Config } from "gridjs";
 
-class Grid extends Component<Partial<UserConfig>, any> {
+class Grid extends Component<Partial<Config>, any> {
   private wrapper: RefObject<HTMLDivElement> = createRef();
   // Grid.js instance
   private readonly instance = null;
@@ -18,6 +18,11 @@ class Grid extends Component<Partial<UserConfig>, any> {
   }
 
   componentDidMount(): void {
+    // prevent gridjs from complaining that the container is not empty
+    if (this.wrapper.current.childNodes.length > 0) {
+      this.wrapper.current.innerHTML = '';
+    }
+
     this.instance.render(this.wrapper.current);
   }
 
