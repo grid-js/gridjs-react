@@ -68,7 +68,6 @@ describe("Grid component", () => {
         columns={["a", "b", "c"]}
         search={true}
         pagination={{
-          enabled: true,
           limit: 1,
         }}
       />
