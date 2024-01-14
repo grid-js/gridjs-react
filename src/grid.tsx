@@ -18,6 +18,11 @@ class Grid extends Component<Partial<Config>, any> {
   }
 
   componentDidMount(): void {
+    // prevent gridjs from complaining that the container is not empty
+    if (this.wrapper.current.childNodes.length > 0) {
+      this.wrapper.current.innerHTML = '';
+    }
+
     this.instance.render(this.wrapper.current);
   }
 
